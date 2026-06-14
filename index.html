@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleh Dwi Samudro - Software Engineer | Product-Oriented Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="Assets/logodev.png">
+</head>
+<body>
+
+    <nav class="navbar-custom d-flex justify-content-between align-items-center">
+        <a href="index.html" class="navbar-brand-custom">
+            <span class="code-icon">&lt; &gt;</span> Galleh Dwi Samudro
+        </a>
+        <button class="hamburger-btn" id="menuToggle" aria-label="Open menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <section class="hero-section">
+        <div class="skill-badges-container">
+            <div class="skill-badge badge-green badge-web">
+                <span class="badge-icon">🌐</span> Web Development
+            </div>
+            <div class="skill-badge badge-white badge-mobile">
+                <span class="badge-icon">📱</span> Mobile First
+            </div>
+            <div class="skill-badge badge-white badge-firebase">
+                <span class="badge-icon">🔥</span> Database
+            </div>
+            <div class="skill-badge badge-white badge-uiux">
+                <span class="badge-icon">🎨</span> UI/UX Design
+            </div>
+            <div class="skill-badge badge-white badge-product">
+                <span class="badge-icon">📦</span> Product
+            </div>
+            <div class="skill-badge badge-light-green badge-js">
+                <span class="badge-icon">📜</span> Front-end Dev
+            </div>
+            <div class="skill-badge badge-green badge-bootstrap">
+                <span class="bi bi-people">️</span> Teamwork
+            </div>
+            <div class="skill-badge badge-white badge-git">
+                <span class="badge-icon">📂</span> Git/GitHub
+            </div>
+            <div class="skill-badge badge-white badge-sales">
+                <span class="badge-icon">💼</span> Business
+            </div>
+
+            <div class="profile-photo-wrapper">
+                <img src="foto galleh.jpeg" 
+                     alt="Galleh Dwi Samudro" 
+                     class="profile-photo">
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-name">Galleh Dwi Samudro</h1>
+            <h2 class="hero-title">Software Engineer | Product-Oriented Developer</h2>
+            <p class="hero-description">
+                Product-Driven Developer specializing in building custom digital products from scratch and developing responsive web applications tailored to real market needs. Backed by over a year of experience as a Mathematics teacher, I bring strong analytical skills, critical thinking, and communication strength to technical projects, seamlessly translating complex algorithmic logic into impactful digital solutions.
+As an independent digital business founder, I balance technical development with consultative client communication to uncover pain points and deliver intuitive, high-quality products.
+</p>
+<p class="hero-description"> Currently pursuing an online Informatics degree with fully flexible scheduling outside of professional hours, ensuring my absolute commitment to work schedules and project deadlines. I am ready to dedicate my full energy to collaborating with your IT team and helping global clients transform business ideas into functional digital realities.
+            </p>
+
+            <a href="cv.html" class="btn-custom-green">View Resume</a>
+            <button class="btn-custom-green" onclick="openContactModal()">
+                <i class="bi bi-person-lines-fill"></i> Contact Me
+            </button>
+        </div>
+    </section>
+
+    <section class="explore-section">
+        <h2 class="explore-title">Explore My Works</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <a href="resume.html" class="explore-card active">
+                        <i class="bi bi-file-earmark-text explore-icon"></i>
+                        <h3 class="explore-card-title">Resume / CV</h3>
+                        <p class="explore-card-desc">My professional experience and skills</p>
+                    </a>
+
+                    <a href="achievements.html" class="explore-card">
+                        <i class="bi bi-trophy explore-icon"></i>
+                        <h3 class="explore-card-title">Achievements</h3>
+                        <p class="explore-card-desc">Awards, recognitions and leadership</p>
+                    </a>
+
+                    <a href="portfolio.html" class="explore-card">
+                        <i class="bi bi-briefcase explore-icon"></i>
+                        <h3 class="explore-card-title">Projects & Ventures</h3>
+                        <p class="explore-card-desc">Professional projects and contributions</p>
+                    </a>
+
+                    <!-- <a href="side-projects.html" class="explore-card">
+                        <i class="bi bi-rocket-takeoff explore-icon"></i>
+                        <h3 class="explore-card-title">Side Projects</h3>
+                        <p class="explore-card-desc">Personal initiatives and passion projects</p>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom">
+        <p>&copy; 2026 Galleh Dwi Samudro. All rights reserved.</p>
+        <p>Lamongan, Indonesia</p>
+    </footer>
+
+    <!-- MODAL CONTACT ME DALAM TABEL -->
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-content">
+            <button class="contact-close" onclick="closeContactModal()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            
+            <div class="contact-modal-header">
+                <h2 class="contact-modal-title">Get In Touch</h2>
+                <p class="contact-modal-subtitle">Let's discuss your project or opportunity</p>
+            </div>
+
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>Contact Method</th>
+                        <th>Contact Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <i class="bi bi-envelope-fill"></i>
+                            Email
+                        </td>
+                        <td>
+                            <a href="mailto:gallehdwis7@gmail.com">
+                                gallehdwis7@gmail.com
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="bi bi-whatsapp"></i>
+                            WhatsApp
+                        </td>
+                        <td>
+                            <a href="https://wa.me/6285921367500" target="_blank">
+                                +62 859-2136-7500
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="bi bi-linkedin"></i>
+                            LinkedIn
+                        </td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/galleh-dwi-samudro-49642b132" target="_blank">
+                                Connect on LinkedIn
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="bi bi-github"></i>
+                            GitHub
+                        </td>
+                        <td>
+                            <a href="https://github.com/gallehdwis" target="_blank">
+                                github.com/gallehdwis
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="contact-info-section">
+                <div class="contact-info-item">
+                    <i class="bi bi-clock-history"></i>
+                    <div>
+                        <strong>Response Time:</strong> Usually within 1-2 hours
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="bi bi-chat-dots"></i>
+                    <div>
+                        I'm open to freelance projects, collaborations, and full-time opportunities
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-header">
+            <a href="index.html" class="navbar-brand-custom">
+                <span class="code-icon">&lt; &gt;</span> Galleh Dwi Samudro
+            </a>
+            <button class="menu-close-btn" id="menuClose" aria-label="Close menu">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+        <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">Resume</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="portfolio.html">Projects & Ventures</a></li>
+            <!-- <li><a href="side-projects.html">Side Projects</a></li> -->
+        </ul>
+
+        <button class="menu-consultation-btn" onclick="openContactModal(); document.getElementById('menuOverlay').classList.remove('active');">
+            <i class="bi bi-person-lines-fill"></i> Contact Me
+        </button>
+
+        <hr class="menu-divider">
+
+        <p class="menu-more-label">More</p>
+        <ul class="menu-more-list">
+            <li><a href="https://github.com/gallehdwis" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/galleh-dwi-samudro-49642b132" target="_blank">LinkedIn</a></li>
+            <li><a href="#" onclick="openContactModal(); document.getElementById('menuOverlay').classList.remove('active');">Get In Touch</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Contact Modal Functions
+        function openContactModal() {
+            document.getElementById('contactModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('contactModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeContactModal();
+            }
+        });
+
+        // Close modal with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeContactModal();
+            }
+        });
+
+        // Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        menuToggle.addEventListener('click', function() {
+            menuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        menuClose.addEventListener('click', function() {
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        document.querySelectorAll('.menu-list a, .menu-more-list a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
