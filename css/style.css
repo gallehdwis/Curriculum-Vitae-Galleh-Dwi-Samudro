@@ -114,10 +114,11 @@ body {
 .badge-web { top: 5%; left: 50%; transform: translateX(-50%); }
 .badge-mobile { top: 15%; left: 12%; }
 .badge-firebase { top: 18%; right: 8%; }
-.badge-uiux { top: 35%; left: 0%; }
-.badge-product { top: 38%; right: 0%; }
-.badge-js { top: 58%; left: 2%; }
-.badge-bootstrap { top: 62%; right: 5%; }
+.badge-uiux { top: 38%; right: 0%;  }
+.badge-product { top: 35%; left: 0%; }
+
+.badge-teamwork{ top: 58%; left: 2%; }
+.badge-js { top: 62%; right: 5%;  }
 .badge-git { top: 82%; left: 18%; }
 .badge-sales { top: 82%; right: 18%; }
 
@@ -705,6 +706,7 @@ body {
         width: 200px;
         height: 200px;
         border-width: 5px;
+
     }
 
     .skill-badge {
@@ -721,10 +723,11 @@ body {
     .badge-web { top: 3%; }
     .badge-mobile { top: 12%; left: 5%; }
     .badge-firebase { top: 15%; right: 5%; }
-    .badge-uiux { top: 32%; left: -2%; }
-    .badge-product { top: 35%; right: -2%; }
-    .badge-js { top: 55%; left: 0%; }
-    .badge-bootstrap { top: 58%; right: 0%; }
+    .badge-uiux { top: 35%; right: -1%;  }
+    .badge-product { top: 32%; left: -1%; }
+
+    .badge-js { top: 58%; right: 0%; }
+    .badge-teamwork { top: 55%; left: 0%;}
     .badge-git { top: 78%; left: 10%; }
     .badge-sales { top: 78%; right: 10%; }
 
@@ -951,10 +954,10 @@ body {
 
     .badge-mobile { left: 2%; }
     .badge-firebase { right: 2%; }
-    .badge-uiux { left: -3%; }
-    .badge-product { right: -3%; }
-    .badge-js { left: -2%; }
-    .badge-bootstrap { right: -2%; }
+    .badge-uiux { right: -2%; }
+    .badge-product { left: -2%; }
+    .badge-js { right: -2%; }
+    .badge-bootstrap { left: -2%; }
     .badge-git { left: 5%; }
     .badge-sales { right: 5%; }
 
