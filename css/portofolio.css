@@ -1,0 +1,1566 @@
+:root {
+    --primary-green: #2d6a4f;
+    --dark-green: #1b4332;
+    --light-green: #a8d5ba;
+    --bg-light: #f0f7f4;
+    --text-dark: #1a1a2e;
+    --text-muted: #4a5568;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.navbar-custom {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.navbar-brand-custom {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-green) !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+/* Hero Section */
+.venture-hero {
+    background: linear-gradient(135deg, rgba(45, 106, 79, 0.95) 0%, rgba(27, 67, 50, 0.95) 100%), 
+                url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600') center/cover;
+    color: white;
+    padding: 100px 20px 80px;
+    text-align: center;
+}
+
+.venture-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.venture-hero .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Main Venture Card */
+.main-venture {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin: -60px auto 50px;
+    max-width: 1000px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.venture-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.venture-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-light);
+    color: var(--primary-green);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.venture-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.venture-tagline {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.venture-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 50px 0 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--light-green);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Approach & Services */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.approach-card {
+    background: linear-gradient(135deg, #f0f7f4 0%, #ffffff 100%);
+    padding: 30px;
+    border-radius: 16px;
+    border: 2px solid var(--light-green);
+    transition: all 0.3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(45, 106, 79, 0.15);
+    border-color: var(--primary-green);
+}
+
+.approach-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.approach-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 12px;
+}
+
+.approach-desc {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tech-badge {
+    background: white;
+    color: var(--primary-green);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--light-green);
+}
+
+/* Services Section */
+.services-section {
+    background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+    padding: 40px;
+    border-radius: 16px;
+    margin: 40px 0;
+}
+
+.service-item {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.1);
+}
+
+.service-item:last-child {
+    margin-bottom: 0;
+}
+
+.service-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-desc {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.service-features li {
+    padding: 5px 0;
+    color: var(--text-muted);
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+
+.service-features i {
+    color: var(--primary-green);
+    margin-top: 4px;
+}
+
+/* Stats */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Portfolio Gallery */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    aspect-ratio: 4/3;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(45, 106, 79, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(45, 106, 79, 0.95), transparent);
+    color: white;
+    padding: 25px 20px;
+}
+
+.portfolio-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.portfolio-desc {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Testimonials */
+.testimonials-section {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 50px 0;
+    color: white;
+}
+
+.testimonials-section .section-title {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-stars {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.testimonial-date {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 70px 40px;
+    background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+    border-radius: 20px;
+    margin: 50px 0;
+    border: 3px solid var(--light-green);
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.cta-subtitle {
+    font-size: 1.4rem;
+    color: var(--primary-green);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.cta-text {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+}
+
+.cta-highlight {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    color: white;
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    color: white;
+    padding: 20px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(45, 106, 79, 0.4);
+    margin: 20px 0;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(45, 106, 79, 0.5);
+    color: white;
+}
+
+.cta-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Other Ventures */
+.other-ventures {
+    margin: 80px 0;
+}
+
+.venture-card {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid var(--primary-green);
+}
+
+.venture-card:hover {
+    box-shadow: 0 8px 25px rgba(45, 106, 79, 0.15);
+}
+
+.venture-card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.venture-card-period {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.venture-card-desc {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.venture-card ul {
+    color: var(--text-muted);
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary-green);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--dark-green);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* MENU OVERLAY */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 2000;
+    transform: translateY(-100%);
+    transition: transform 0.4s;
+    overflow-y: auto;
+}
+
+.menu-overlay.active {
+    transform: translateY(0);
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+}
+
+.menu-close-btn {
+    background: #f0f0f0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 20px 25px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.menu-list li a:hover {
+    background-color: var(--bg-light);
+    color: var(--primary-green);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 3000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    color: var(--light-green);
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+/* ========================================
+   MEDIA QUERIES - MOBILE RESPONSIVE
+   ======================================== */
+
+/* Tablet (768px dan bawah) */
+@media (max-width: 768px) {
+    .navbar-custom {
+        padding: 12px 15px;
+    }
+
+    .navbar-brand-custom {
+        font-size: 1.2rem;
+    }
+
+    .hamburger-btn {
+        font-size: 1.6rem;
+    }
+
+    .venture-hero {
+        padding: 80px 15px 70px;
+    }
+
+    .venture-hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .venture-hero .subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .main-venture {
+        padding: 35px 25px;
+        margin: -50px auto 40px;
+        border-radius: 18px;
+    }
+
+    .venture-header {
+        margin-bottom: 30px;
+    }
+
+    .venture-badge {
+        font-size: 0.85rem;
+        padding: 6px 16px;
+    }
+
+    .venture-title {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .venture-tagline {
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+    }
+
+    .venture-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin: 40px 0 25px;
+        padding-bottom: 12px;
+        gap: 10px;
+    }
+
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin: 25px 0;
+    }
+
+    .approach-card {
+        padding: 22px;
+    }
+
+    .approach-icon {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+    }
+
+    .approach-title {
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+    }
+
+    .approach-desc {
+        font-size: 0.92rem;
+    }
+
+    .tech-badge {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+
+    .services-section {
+        padding: 30px 25px;
+        margin: 30px 0;
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+
+    .service-title {
+        font-size: 1.15rem;
+    }
+
+    .service-desc {
+        font-size: 0.92rem;
+    }
+
+    .service-features li {
+        font-size: 0.9rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin: 30px 0;
+    }
+
+    .stat-card {
+        padding: 20px 15px;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.88rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .portfolio-overlay {
+        padding: 18px 15px;
+    }
+
+    .portfolio-title {
+        font-size: 1.05rem;
+    }
+
+    .portfolio-desc {
+        font-size: 0.85rem;
+    }
+
+    .testimonials-section {
+        padding: 40px 25px;
+        margin: 40px 0;
+    }
+
+    .testimonials-grid {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .testimonial-card {
+        padding: 22px;
+    }
+
+    .testimonial-stars {
+        font-size: 1.1rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+
+    .testimonial-author {
+        font-size: 1rem;
+    }
+
+    .cta-section {
+        padding: 50px 30px;
+        margin: 40px 0;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+    }
+
+    .cta-highlight {
+        padding: 12px 28px;
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        padding: 16px 35px;
+        font-size: 1.15rem;
+        gap: 12px;
+    }
+
+    .other-ventures {
+        margin: 60px 0;
+    }
+
+    .venture-card {
+        padding: 30px 25px;
+    }
+
+    .venture-card-title {
+        font-size: 1.4rem;
+    }
+
+    /* Lightbox */
+    .lightbox-close {
+        top: 15px;
+        right: 25px;
+        font-size: 2.8rem;
+    }
+
+    .lightbox-caption {
+        font-size: 1rem;
+        bottom: 15px;
+    }
+
+    /* Menu Tablet */
+    .menu-header {
+        padding: 12px 15px;
+    }
+
+    .menu-list {
+        padding: 15px 20px;
+    }
+
+    .menu-list li a {
+        font-size: 1.05rem;
+        padding: 10px 12px;
+    }
+}
+
+/* Mobile (576px dan bawah) */
+@media (max-width: 576px) {
+    .navbar-custom {
+        padding: 10px 12px;
+    }
+
+    .navbar-brand-custom {
+        font-size: 1.1rem;
+        gap: 6px;
+    }
+
+    .navbar-brand-custom .code-icon {
+        font-size: 1rem;
+    }
+
+    .hamburger-btn {
+        font-size: 1.5rem;
+    }
+
+    .venture-hero {
+        padding: 60px 15px 60px;
+    }
+
+    .venture-hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .venture-hero .subtitle {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .main-venture {
+        padding: 25px 18px;
+        margin: -45px 12px 35px;
+        border-radius: 16px;
+    }
+
+    .venture-header {
+        margin-bottom: 25px;
+    }
+
+    .venture-badge {
+        font-size: 0.78rem;
+        padding: 5px 14px;
+        gap: 5px;
+        margin-bottom: 12px;
+    }
+
+    .venture-title {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+    }
+
+    .venture-tagline {
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+    }
+
+    .venture-description {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
+    .section-title {
+        font-size: 1.35rem;
+        margin: 35px 0 20px;
+        padding-bottom: 10px;
+        gap: 8px;
+    }
+
+    .section-title i {
+        font-size: 1.15rem;
+    }
+
+    /* Approach Grid - 1 kolom di mobile */
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .approach-card {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .approach-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .approach-title {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .approach-desc {
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+
+    .tech-stack {
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .tech-badge {
+        padding: 4px 10px;
+        font-size: 0.78rem;
+    }
+
+    /* Services */
+    .services-section {
+        padding: 20px 15px;
+        margin: 25px 0;
+        border-radius: 14px;
+    }
+
+    .service-item {
+        padding: 18px 15px;
+        margin-bottom: 15px;
+        border-left-width: 3px;
+    }
+
+    .service-title {
+        font-size: 1.05rem;
+        margin-bottom: 8px;
+        gap: 8px;
+    }
+
+    .service-title i {
+        font-size: 1rem;
+    }
+
+    .service-desc {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+
+    .service-features {
+        margin-top: 8px;
+    }
+
+    .service-features li {
+        font-size: 0.85rem;
+        padding: 4px 0;
+        gap: 6px;
+    }
+
+    .service-features i {
+        font-size: 0.9rem;
+        margin-top: 3px;
+    }
+
+    /* Stats - 1 kolom di mobile */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 25px 0;
+    }
+
+    .stat-card {
+        padding: 18px 15px;
+        border-radius: 12px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+        margin-bottom: 3px;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    /* Portfolio - 1 kolom di mobile */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .portfolio-item {
+        border-radius: 14px;
+    }
+
+    .portfolio-overlay {
+        padding: 15px 12px;
+    }
+
+    .portfolio-title {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .portfolio-desc {
+        font-size: 0.82rem;
+    }
+
+    /* Testimonials - 1 kolom */
+    .testimonials-section {
+        padding: 30px 18px;
+        margin: 35px 0;
+        border-radius: 16px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .testimonial-card {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .testimonial-stars {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .testimonial-text {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-author {
+        font-size: 0.95rem;
+    }
+
+    .testimonial-date {
+        font-size: 0.82rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 35px 20px;
+        margin: 35px 0;
+        border-radius: 16px;
+        border-width: 2px;
+    }
+
+    .cta-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .cta-subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-text {
+        font-size: 0.9rem;
+        line-height: 1.65;
+        margin-bottom: 25px;
+    }
+
+    .cta-highlight {
+        padding: 10px 22px;
+        font-size: 1rem;
+        border-radius: 12px;
+        margin: 15px 0;
+    }
+
+    .cta-highlight i {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 14px 28px;
+        font-size: 1rem;
+        gap: 10px;
+        border-radius: 40px;
+        margin: 15px 0;
+    }
+
+    .cta-note {
+        font-size: 0.88rem;
+        margin-top: 15px;
+        gap: 6px;
+    }
+
+    /* Other Ventures */
+    .other-ventures {
+        margin: 50px 0;
+    }
+
+    .venture-card {
+        padding: 25px 18px;
+        border-radius: 14px;
+        border-left-width: 4px;
+    }
+
+    .venture-card-title {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .venture-card-title i {
+        font-size: 1.1rem;
+    }
+
+    .venture-card-period {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    .venture-card-desc {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .venture-card ul {
+        padding-left: 18px;
+        font-size: 0.85rem;
+        line-height: 1.65;
+    }
+
+    .venture-card ul li {
+        margin-bottom: 4px;
+    }
+
+    .back-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    /* Lightbox Mobile */
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox img {
+        max-height: 85vh;
+        border-radius: 6px;
+    }
+
+    .lightbox-close {
+        top: 12px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .lightbox-caption {
+        font-size: 0.9rem;
+        bottom: 12px;
+        padding: 0 15px;
+    }
+
+    .lightbox-caption .portfolio-title {
+        font-size: 1rem;
+    }
+
+    .lightbox-caption .portfolio-desc {
+        font-size: 0.82rem;
+    }
+
+    /* Menu Mobile */
+    .menu-header {
+        padding: 10px 12px;
+    }
+
+    .menu-close-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+    }
+
+    .menu-list {
+        padding: 12px 15px;
+    }
+
+    .menu-list li a {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+}
+
+/* Mobile Kecil (480px dan bawah) */
+@media (max-width: 480px) {
+    .navbar-brand-custom {
+        font-size: 1rem;
+    }
+
+    .navbar-brand-custom .code-icon {
+        font-size: 0.95rem;
+    }
+
+    .hamburger-btn {
+        font-size: 1.4rem;
+    }
+
+    .venture-hero {
+        padding: 50px 12px 55px;
+    }
+
+    .venture-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .venture-hero .subtitle {
+        font-size: 0.88rem;
+    }
+
+    .main-venture {
+        padding: 22px 15px;
+        margin: -40px 10px 30px;
+        border-radius: 14px;
+    }
+
+    .venture-badge {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+
+    .venture-title {
+        font-size: 1.4rem;
+    }
+
+    .venture-tagline {
+        font-size: 0.88rem;
+    }
+
+    .venture-description {
+        font-size: 0.88rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        margin: 30px 0 18px;
+        padding-bottom: 8px;
+        border-bottom-width: 2px;
+    }
+
+    .approach-card {
+        padding: 18px;
+    }
+
+    .approach-icon {
+        font-size: 1.8rem;
+    }
+
+    .approach-title {
+        font-size: 1rem;
+    }
+
+    .approach-desc {
+        font-size: 0.85rem;
+    }
+
+    .tech-badge {
+        padding: 3px 9px;
+        font-size: 0.75rem;
+    }
+
+    .services-section {
+        padding: 18px 12px;
+    }
+
+    .service-item {
+        padding: 15px 12px;
+    }
+
+    .service-title {
+        font-size: 1rem;
+    }
+
+    .service-desc {
+        font-size: 0.85rem;
+    }
+
+    .service-features li {
+        font-size: 0.82rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .testimonials-section {
+        padding: 25px 15px;
+    }
+
+    .testimonial-text {
+        font-size: 0.85rem;
+    }
+
+    .cta-section {
+        padding: 30px 15px;
+    }
+
+    .cta-title {
+        font-size: 1.4rem;
+    }
+
+    .cta-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .cta-text {
+        font-size: 0.85rem;
+    }
+
+    .cta-highlight {
+        padding: 8px 18px;
+        font-size: 0.95rem;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+        gap: 8px;
+    }
+
+    .venture-card {
+        padding: 20px 15px;
+    }
+
+    .venture-card-title {
+        font-size: 1.1rem;
+    }
+
+    .back-btn {
+        padding: 9px 18px;
+        font-size: 0.85rem;
+    }
+
+    /* Lightbox Small */
+    .lightbox {
+        padding: 10px;
+    }
+
+    .lightbox img {
+        max-height: 80vh;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+
+    .lightbox-caption {
+        font-size: 0.82rem;
+        bottom: 10px;
+        padding: 0 10px;
+    }
+
+    /* Menu Small */
+    .menu-header {
+        padding: 10px 12px;
+    }
+
+    .menu-close-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+
+    .menu-list {
+        padding: 10px 12px;
+    }
+
+    .menu-list li {
+        margin-bottom: 3px;
+    }
+
+    .menu-list li a {
+        font-size: 0.95rem;
+        padding: 9px 10px;
+    }
+}
+
+/* Desktop Besar (1200px ke atas) */
+@media (min-width: 1200px) {
+    .main-venture {
+        max-width: 1100px;
+        padding: 60px 50px;
+    }
+
+    .venture-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .venture-hero .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .venture-title {
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .approach-card {
+        padding: 35px;
+    }
+
+    .services-section {
+        padding: 50px;
+    }
+
+    .stat-number {
+        font-size: 3.2rem;
+    }
+
+    .stat-label {
+        font-size: 1.1rem;
+    }
+
+    .cta-title {
+        font-size: 2.8rem;
+    }
+
+    .cta-button {
+        padding: 22px 50px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .venture-hero {
+        padding: 40px 15px 50px;
+    }
+
+    .venture-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-venture {
+        padding: 25px 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px 10px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .testimonials-section {
+        padding: 30px 20px;
+    }
+
+    .lightbox img {
+        max-height: 75vh;
+    }
+
+    .lightbox-caption {
+        font-size: 0.9rem;
+        bottom: 10px;
+    }
+}
