@@ -1132,24 +1132,28 @@ body {
     
     .contact-table td:last-child {
         border-bottom: none;
-        padding: 10px 12px;
+        padding: 12px 10px;
+        width: 60%;
     }
     
     .contact-table td:first-child {
         padding: 12px;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         font-weight: 700;
+
+        white-space: normal; /* ✅ Izinkan wrap */
+        width: 40%;          /* ✅ Perlebar kolom pertama */
     }
     
     .contact-table td i {
-        font-size: 1rem;
+        font-size: 0.8rem;
         width: 18px;
-        margin-right: 8px;
+        margin-right: 4px;
     }
     
     .contact-table a {
-        font-size: 0.82rem;
-        word-break: break-all;
+        font-size: 0.65rem;
+        white-space: nowrap;
     }
     
     .contact-info-section {
